@@ -11,4 +11,4 @@ Just a simple chatbot (without history) for asking anything to Google Gemini mod
 Model used : Gemini 1.5 Pro
 
 Example : 
-[Usage](https://github.com/arifian853/simple-ai-chat/blob/master/public/usage.jpg)
+![Usage](https://github.com/arifian853/simple-ai-chat/blob/master/public/usage.jpg)
