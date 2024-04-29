@@ -9,3 +9,6 @@ Just a simple chatbot (without history) for asking anything to Google Gemini mod
 - Replace the ```VITE_API_KEY``` value on  ```.env``` file with the Google AI Studio API Key you have obtained.
 
 Model used : Gemini 1.5 Pro
+
+Example : 
+<img src="./usage.jpg"  alt="Profile Banner"  />
