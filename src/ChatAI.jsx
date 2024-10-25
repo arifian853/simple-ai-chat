@@ -28,31 +28,36 @@ export const ChatAI = () => {
     };
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center justify-center w-full">
             <br />
 
-            {loading ? (
-                <div className="loader pb-3"></div>
-            ) : (
-                <p className="w-2/3 border-r-slate-800 bg-slate-700 p-3 text-white rounded-md">
-                    <Markdown>{generatedText}</Markdown>
-                </p>
-            )}
+            <div className="md:w-2/3 w-11/12 md:max-h-[700px] max-h-[570px] overflow-auto md:pr-3 pr-0 rounded-sm">
+                {loading ? (
+                    <div className="loader pb-3"></div>
+                ) : (
+                    <p className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md">
+                        <Markdown>{generatedText}</Markdown>
+                    </p>
+                )}
+            </div>
             <br />
-            <div className="flex items-center">
-                <input
-                    type="text"
-                    value={inputText}
-                    onChange={handleInputChange}
-                    placeholder="Enter your message..."
-                    className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md mr-2 w-full"
-                />
-                <button
-                    onClick={handleSubmit}
-                    className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md"
-                >
-                    Send
-                </button>
+            <div className="flex flex-col items-center absolute bottom-0 m-5 md:w-2/3 w-11/12">
+                <div className="flex row items-center w-full">
+                    <input
+                        type="text"
+                        value={inputText}
+                        onChange={handleInputChange}
+                        placeholder="Enter your message..."
+                        className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md mr-2 md:w-full w-full"
+                    />
+                    <button
+                        onClick={handleSubmit}
+                        className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md"
+                    >
+                        Send
+                    </button>
+                </div>
+                <span className='m-3 text-sm opacity-65 text-center'>Copyright © <a className='underline' href="https://arifian853.vercel.app" target='_blank'>Arifian Saputra</a>, {new Date().getFullYear()}. All rights reserved | <a className='underline' href="https://github.com/arifian853/simple-ai-chat" target='_blank'>Repository</a></span>
             </div>
         </div>
     );
