@@ -34,7 +34,7 @@ export const ChatAI = () => {
         <div className="flex flex-col items-center justify-center w-full">
             <br />
 
-            <div className="md:w-2/3 w-11/12 md:max-h-[700px] max-h-[570px] overflow-auto md:pr-3 pr-0 rounded-sm">
+            <div className="md:w-2/3 w-11/12 md:max-h-[500px] max-h-[350px] overflow-auto md:pr-3 pr-0 rounded-sm">
                 {loading ? (
                     <div className="loader pb-3"></div>
                 ) : (
