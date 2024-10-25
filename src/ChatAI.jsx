@@ -2,6 +2,9 @@ import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import Markdown from 'react-markdown'
 
+
+import { IoMdSend } from "react-icons/io";
+
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
 
 export const ChatAI = () => {
@@ -47,14 +50,15 @@ export const ChatAI = () => {
                         type="text"
                         value={inputText}
                         onChange={handleInputChange}
+                        onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
                         placeholder="Enter your message..."
                         className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md mr-2 md:w-full w-full"
                     />
                     <button
                         onClick={handleSubmit}
-                        className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md"
+                        className="border-r-slate-800 bg-slate-700 p-3 text-white rounded-md flex items-center gap-3"
                     >
-                        Send
+                        Send <IoMdSend />
                     </button>
                 </div>
                 <span className='m-3 text-sm opacity-65 text-center'>Copyright © <a className='underline' href="https://arifian853.vercel.app" target='_blank'>Arifian Saputra</a>, {new Date().getFullYear()}. All rights reserved | <a className='underline' href="https://github.com/arifian853/simple-ai-chat" target='_blank'>Repository</a></span>
