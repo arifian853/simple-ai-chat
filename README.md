@@ -7,7 +7,7 @@
 </div>
 
 
-<h2>Usage</h2>
+<h2 align="center">Usage</h2>
 
 - Find your Google AI Studio API Key here : https://aistudio.google.com/
 - Change the ```.env.example``` file to ```.env```
