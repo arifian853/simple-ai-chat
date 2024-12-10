@@ -7,6 +7,12 @@ import { MdRefresh, MdSend } from "react-icons/md";
 import { FaAngleDown, FaTrash } from "react-icons/fa6";
 import Markdown from 'react-markdown'
 
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
+// Pastikan untuk mengimpor stylesheet KaTeX
+import 'katex/dist/katex.min.css';
+
 import {
     Dialog,
     DialogContent,
@@ -278,7 +284,10 @@ export const Chat = () => {
                                             : 'bg-[#1C1D24] text-white'
                                             }`}
                                     >
-                                        <Markdown>
+                                        <Markdown
+                                            remarkPlugins={[remarkMath]}
+                                            rehypePlugins={[rehypeKatex]}
+                                        >
                                             {typeof message.text === 'string'
                                                 ? message.text
                                                 : String(message.text)}
