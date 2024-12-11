@@ -256,7 +256,7 @@ export const Chat = () => {
                                                     <DialogHeader>
                                                         <DialogTitle className="display-font">About</DialogTitle>
                                                         <DialogDescription className="py-3 text-left">
-                                                            TBA
+                                                            Just a simple chatbot for asking anything to Google Gemini model through Google AI Studio API Key
                                                         </DialogDescription>
                                                     </DialogHeader>
                                                 </DialogContent>

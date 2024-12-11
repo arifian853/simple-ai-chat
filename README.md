@@ -1,5 +1,5 @@
 <h1 align="center"> Google Generative Language API (Gemini API) </h1>
-<p align="center"> Just a simple chatbot (without history) for asking anything to Google Gemini model.</p>
+<p align="center"> Just a simple chatbot for asking anything to Google Gemini model through Google AI Studio API Key. </p>
 
 <div align="center">
     <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
