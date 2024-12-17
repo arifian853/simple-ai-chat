@@ -256,7 +256,8 @@ export const Chat = () => {
                                                     <DialogHeader>
                                                         <DialogTitle className="display-font">About</DialogTitle>
                                                         <DialogDescription className="py-3 text-left">
-                                                            Just a simple chatbot for asking anything to Google Gemini model through Google AI Studio API Key
+                                                            Just a simple chatbot for asking anything to Google Gemini model through Google AI Studio API Key. <br />
+                                                            Repo : <a href="https://github.com/arifian853/simple-ai-chat" target='_blank'>https://github.com/arifian853/simple-ai-chat</a>
                                                         </DialogDescription>
                                                     </DialogHeader>
                                                 </DialogContent>
