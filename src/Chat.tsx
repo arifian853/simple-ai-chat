@@ -4,7 +4,7 @@ import { Input } from './components/ui/input';
 import { Card } from './components/ui/card';
 import { Button } from './components/ui/button';
 import { MdRefresh, MdSend } from "react-icons/md";
-import { FaAngleDown, FaTrash } from "react-icons/fa6";
+import { FaAngleDown, FaRegStar, FaTrash } from "react-icons/fa6";
 import Markdown from 'react-markdown'
 
 import remarkMath from 'remark-math';
@@ -256,8 +256,9 @@ export const Chat = () => {
                                                     <DialogHeader>
                                                         <DialogTitle className="display-font">About</DialogTitle>
                                                         <DialogDescription className="py-3 text-left">
-                                                            Just a simple chatbot for asking anything to Google Gemini model through Google AI Studio API Key. <br />
-                                                            Repo : <a href="https://github.com/arifian853/simple-ai-chat" target='_blank'>https://github.com/arifian853/simple-ai-chat</a>
+                                                            Just a simple chatbot for asking anything to Google Gemini model through Google AI Studio API Key. <br /> <br />
+                                                            <p className='flex items-center gap-1'> <FaRegStar />GitHub repository: <a className='underline' href="https://github.com/arifian853/simple-ai-chat" target='_blank'> https://github.com/arifian853/simple-ai-chat</a> </p>
+                                                            
                                                         </DialogDescription>
                                                     </DialogHeader>
                                                 </DialogContent>
@@ -275,7 +276,7 @@ export const Chat = () => {
                                     className={`mb-2 flex items-center ${message.sender === 'bot' ? 'justify-start' : 'justify-end'}`}
                                 >
                                     {message.sender === 'bot' && (
-                                        <span className='text-3xl border-2 p-1 mr-1 rounded-full'>
+                                        <span className='text-3xl border-2 p-1 mr-1 rounded-full border-b-cyan-500 border-r-cyan-400 border-t-cyan-300 border-l-cyan-200'>
                                             <SiGooglegemini />
                                         </span>
                                     )}
@@ -295,7 +296,7 @@ export const Chat = () => {
                                         </Markdown>
                                     </div>
                                     {message.sender === 'user' && (
-                                        <span className='text-3xl border-2 p-1 ml-1 rounded-full'>
+                                        <span className='text-3xl border-2 p-1 ml-1 rounded-full border-b-orange-500 border-r-orange-400 border-t-orange-300 border-l-orange-200'>
                                             <SiGooglegemini />
                                         </span>
                                     )}
