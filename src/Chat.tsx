@@ -309,7 +309,7 @@ export const Chat = () => {
                         <div className="flex justify-center items-center gap-2 p-4">
                             {responseTime > 0 && (
                                 <p className="text-xs text-gray-500">
-                                    Model response time: {responseTime / 1000} s
+                                    Model response time: {(responseTime / 1000).toFixed(2)}s
                                 </p>
                             )}
                         </div>
